@@ -1,7 +1,7 @@
 const c = @import("c.zig").c;
 
 /// Key and button actions
-pub const Action = enum(c_int) {
+pub const Action = enum(u8) {
     /// The key or mouse button was released.
     release = c.GLFW_RELEASE,
 
